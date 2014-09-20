@@ -1,0 +1,49 @@
+Enter file contents here
+/* 
+Primero haremos nustro programaciom pi sql hola mundo 
+jiji
+etc
+*/
+set serveroutput on;
+--este es un comentario de una sola linea 
+
+--declare   aqui se declaran las variables pero es opcional si no hay variables 
+
+begin --este bloque marca el inicio de tu logica de informacion 
+--null;
+dbms_output.put_line('mi primer programita dl pl sql');
+--exception  este  vloque tambien es opcional ya que todos nuestrod codigos lanzaran excepciones 
+
+end;
+  -- /la diagonal se usa si quieres correr este bloque desde la linea de comando y marca la terminacion del bloque pl sql y su ejecucion 
+  
+  
+  --otro programita
+  
+  declare 
+  edad integer;
+  edad_dias integer;
+  begin
+  edad:=19;
+  edad_dias:=edad*365;
+  dbms_output.put_line('Tu edad en dias es:'||edad_dias);
+  end;
+  /
+  
+  create table hola(id integer, edad integer, nombre varchar2(120));
+  
+  begin 
+  
+  for i in 1..10 loop
+  dbms_output.put_line(i||'Primer ciclo');
+  insert into hola values (i,19,'Josue Olvera');
+  end loop;
+  end;
+  
+  
+  
+  
+  
+  
+  
+  select *from hola;
